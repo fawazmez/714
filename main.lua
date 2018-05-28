@@ -2,7 +2,7 @@
 --
 -- main.lua
 --
--- Created By: fawaz mezher
+-- Created By: FAWAZ MEZHER
 -- Created On: May 2018
 --
 -- Setting up composer

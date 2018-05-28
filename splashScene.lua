@@ -11,12 +11,12 @@ local scene = composer.newScene()
 
 local function showMenu( event )
 
-	local options = {
-		effect = 'fade',
-		time = 750
-	}
+    local options = {
+        effect = 'fade',
+        time = 750
+    }
 
-	composer.gotoScene( 'scene.menuScene', options )
+    composer.gotoScene( 'scene.menuScene', options )
 end
 -- create()
 function scene:create( event )
@@ -35,15 +35,15 @@ function scene:show( event )
  
     if ( phase == "will" ) then
         -- Code here runs when the scene is still off screen (but is about to come on screen)
- 		
+        
 
- 		local background = display.newRect( display.contentCenterX, display.contentCenterY, 2048, 1536 )
- 		background:setFillColor( 0, 0, 1 )
- 		sceneGroup:insert( background )
+        local background = display.newRect( display.contentCenterX, display.contentCenterY, 2048, 1536 )
+        background:setFillColor( 0, 0, 1 )
+        sceneGroup:insert( background )
 
-		local sceneText = display.newText( 'Loading...', display.contentCenterX, display.contentCenterY, native.systemFont, 128 )
-		sceneText:setFillColor( 1, 0, 0 )
-		sceneGroup:insert( sceneText )
+        local sceneText = display.newText( 'Loading...', display.contentCenterX, display.contentCenterY, native.systemFont, 128 )
+        sceneText:setFillColor( 1, 0, 0 )
+        sceneGroup:insert( sceneText )
 
     elseif ( phase == "did" ) then
         -- Code here runs when the scene is entirely on screen
@@ -61,7 +61,7 @@ function scene:hide( event )
  
     if ( phase == "will" ) then
         -- Code here runs when the scene is on screen (but is about to go off screen)
- 		
+        
     elseif ( phase == "did" ) then
         -- Code here runs immediately after the scene goes entirely off screen
  

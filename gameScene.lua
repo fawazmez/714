@@ -22,7 +22,7 @@ function scene:create( event )
 	physics.setDrawMode( "normal" )
 
     -- show map 
-    local filename = "assets/maps/level1.json"
+    local filename = "assets/maps/level0.json"
     local mapData = json.decodeFile( system.pathForFile( filename, system.ResourceDirectory ) )
     map = tiled.new( mapData, "assets/maps" )
 
